@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+h3 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+/******************** BOTÕES ********************/
+.container-botao {
+    display: flex;
+    justify-content: center;
+}
+
+.botao {
+    background: #FF0000;
+    font-size: 24px;
+    height: 50px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+.btn-reset {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: end;
+}
+
+.btn-registro {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+/*************** HEADER ***************/
+.menu {
+    background: #FF0000;
+
+    width: 100vw;
+    height: 90px;
+
+    display: flex;
+    position: static;
+    align-items: center;
+    justify-content: center;
+    gap: 500px;
+}
+
+.menu-item {
+    color: #FFFFFF;
+}
+
+.icon {
+    display: flex;
+}
+
+.a-sobre,
+.a-produtos,
+.a-fale-conosco {
+    color: #FFFFFF;
+}
+
+/*************** LOGIN ***************/
+.container-login {
+    width: 100vw;
+    height: calc(100vh - 90px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#email,
+#senha {
+    margin-top: 10px;
+    height: 30px;
+    width: 400px;
+    border-radius: 20px;
+    color: #000000;
+    font-size: 24px;
+    padding: 10px
+}
+
+.texto-reset,
+.texto-registro {
+    color: #FF0000;
+}
+
+/*************** RESET ***************/
+.container-reset {
+    width: 100vw;
+    height: calc(100vh - 90px);
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.grupo-reset {
+    margin-bottom: 10px;
+}
+
+/*************** REGISTER ***************/
+.container-registro {
+    width: 100vw;
+    height: calc(100vh - 90px);
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputs-registro {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/*************** HOME ***************/
+.primeiro-bloco,
+.segundo-bloco {
+    height: 600px;
+    width: 100vw;
+
+    display: flex;
+}
+
+.lado-esquerdo,
+.lado-direito {
+    height: 100%;
+    width: 100vw;
+}
+
+.texto-1,
+.texto-2 {
+    height: calc(100% - 90px);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 32px;
+}
+
+.titulo-texto,
+.titulo-texto-2 {
+    font-size: 56px;
+}
+
+.texto-principal,
+.texto-principal-2 {
+    width: 50%;
+}
+
+/*************** CONTACT US ***************/
+.container-contato {
+    width: 100vw;
+    height: calc(100vh - 90px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#textarea {
+    width: 400px;
+    height: 250px;
+    border-radius: 20px;
+    resize: none;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.grupo-contato {
+    padding-top: 10px;
+    text-align: center;
+}
+
+.texto-contato {}
+
+.whatsapp {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.icon-whatsapp {
+    width: 60px;
+}
+
+/*************** PRODUCTS ***************/
+.primeiro-bloco {
+    height: calc(100vh - 90px);
+    width: 100vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 100px;
+}
+
+.produto-container {
+    width: 350px;
+    height: 440px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background: #F5F5F5;
+
+    border-radius: 40px;
+}
+
+.header-titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90px;
+    width: 380px;
+    background: #FF0000;
+
+    border-radius: 20px;
+}
+
+.titulo-produto {
+    font-size: 36px;
+    color: #FFFFFF;
+}
+
+.container-btn {
+    padding: 15px 0;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 100px;
+}
+
+.box-btn {
+    width: 380px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.trocar-imagem-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background: #fffFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+}
+
+.virar-botao {
+    transform: rotate(180deg);
+}
+
+.produto-container-pequeno {
+    padding: 20px 80px;
+    background: #EDEDED;
+    border-radius: 20px;
+}
+
+.texto-produto-1,
+.texto-produto-2,
+.texto-produto-3,
+.texto-produto-4 {
+    font-size: 20px;
+}
+
+.container-btn-quantidade {
+    padding: 15px 0;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 70px;
+}
+
+.box-btn-quantidade {
+    width: 280px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.trocar-quantidade-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+}
+
+
+#laranja-imagem,
+#maca-imagem,
+#tomate-imagem,
+#alface-imagem {
+    margin-top: 40px;
+    height: 150px;
+}
+
+.dsmovie-pagination-box form {
+    width: 100%;
+    display: flex;
+}
