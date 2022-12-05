@@ -19,6 +19,13 @@ h3 {
     justify-content: center;
 }
 
+.container-botao-registro {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 .botao {
     background: #FF0000;
     font-size: 24px;
@@ -57,7 +64,7 @@ h3 {
     position: static;
     align-items: center;
     justify-content: center;
-    gap: 500px;
+    gap: 20%;
 }
 
 .menu-item {
@@ -88,11 +95,11 @@ h3 {
 #senha {
     margin-top: 10px;
     height: 30px;
-    width: 400px;
+    width: 330px;
     border-radius: 20px;
     color: #000000;
-    font-size: 24px;
-    padding: 10px
+    font-size: 17px;
+    padding: 14px 16px;
 }
 
 .texto-reset,
@@ -131,6 +138,59 @@ h3 {
     margin-bottom: 10px;
 }
 
+/*************** REGISTER COMPANY ***************/
+.container-registro-empresa {
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario-registro-empresa {
+    width: 50%;
+}
+
+#nome-registro,
+#email-registro,
+#endereco-registro,
+#bairro-registro,
+#cidade-registro {
+    width: 64%;
+    margin-top: 10px;
+    height: 30px;
+    border-radius: 20px;
+    color: #000000;
+    font-size: 17px;
+    padding: 14px 16px;
+}
+
+#telefone-registro,
+#cnpj-registro,
+#numero-registro,
+#cep-registro,
+#estado-registro {
+    float: right;
+    width: 25%;
+    margin-top: 10px;
+    height: 30px;
+    border-radius: 20px;
+    color: #000000;
+    font-size: 17px;
+    padding: 14px 16px;
+}
+
+#input-question3,
+#input-question5 {
+    width: 100%;
+    height: 30px;
+    border-radius: 20px;
+    color: #000000;
+    font-size: 17px;
+    padding: 14px 16px;
+}
+
+
 /*************** HOME ***************/
 .primeiro-bloco,
 .segundo-bloco {
@@ -166,6 +226,11 @@ h3 {
 .texto-principal,
 .texto-principal-2 {
     width: 50%;
+}
+
+.imagem-1 {
+    width: 80%;
+    height: 80%;
 }
 
 /*************** CONTACT US ***************/
@@ -215,12 +280,13 @@ h3 {
     align-items: center;
     justify-content: center;
 
-    gap: 100px;
+    gap: 5%;
+
 }
 
 .produto-container {
-    width: 350px;
-    height: 440px;
+    width: 13.87em;
+    height: 21.12em;
 
     display: flex;
     flex-direction: column;
@@ -232,18 +298,20 @@ h3 {
 }
 
 .header-titulo {
+    height: 70px;
+    width: 16.75em;
+    background: #FF0000;
+
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 90px;
-    width: 380px;
-    background: #FF0000;
+    position: fixed;
 
     border-radius: 20px;
 }
 
 .titulo-produto {
-    font-size: 36px;
+    font-size: 24px;
     color: #FFFFFF;
 }
 
@@ -251,12 +319,12 @@ h3 {
     padding: 15px 0;
     justify-content: center;
     align-items: center;
-    position: relative;
-    bottom: 100px;
+    position: fixed;
+    top: 52%;
 }
 
 .box-btn {
-    width: 380px;
+    width: 16.75em;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -279,36 +347,37 @@ h3 {
 }
 
 .produto-container-pequeno {
-    padding: 20px 80px;
+    padding: 0.6em 2em;
     background: #EDEDED;
     border-radius: 20px;
+    position: fixed;
+    top: 70%;
 }
 
 .texto-produto-1,
 .texto-produto-2,
 .texto-produto-3,
 .texto-produto-4 {
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .container-btn-quantidade {
-    padding: 15px 0;
     justify-content: center;
     align-items: center;
-    position: relative;
-    bottom: 70px;
+    position: fixed;
+    top: 72.5%;
 }
 
 .box-btn-quantidade {
-    width: 280px;
+    width: 8.5em;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .trocar-quantidade-btn {
-    width: 40px;
-    height: 40px;
+    width: 10px;
+    height: 10px;
     border-radius: 20px;
     background: #FFFFFF;
     display: flex;
@@ -323,8 +392,9 @@ h3 {
 #maca-imagem,
 #tomate-imagem,
 #alface-imagem {
-    margin-top: 40px;
-    height: 150px;
+    top: 50%;
+    height: 100px;
+    position: fixed;
 }
 
 .dsmovie-pagination-box form {
