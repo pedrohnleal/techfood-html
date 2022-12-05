@@ -46,3 +46,45 @@ function trocarQuarto() {
 
 }
 
+function redi() {
+    var radio = document.getElementsByName('opcao-registro');
+    for (i = 0; i < radio.length; i++) {
+        if (radio[0].checked) {
+            window.location.assign("cadastroEmpresa.html");
+        } else if (radio[1].checked) {
+            window.location.assign("cadastroONG.html");
+        } else if (radio[2].checked) {
+            window.location.assign("cadastroUsuario.html");
+        }
+    }
+}
+
+var num = 1;
+function aumentarPrimeiro() {
+    document.getElementById("caixote1").innerHTML = (num = num + 1) + " caixotes";
+}
+function diminuirPrimeiro() {
+    document.getElementById("caixote1").innerHTML = (num = num - 1) + " caixotes";
+}
+
+function aumentarSegundo() {
+    document.getElementById("caixote2").innerHTML = (num = num + 1) + " caixotes";
+}
+function diminuirSegundo() {
+    document.getElementById("caixote2").innerHTML = (num = num - 1) + " caixotes";
+}
+
+function aumentarTerceiro() {
+    document.getElementById("caixote3").innerHTML = (num = num + 1) + " caixotes";
+}
+function diminuirTerceiro() {
+    document.getElementById("caixote3").innerHTML = (num = num - 1) + " caixotes";
+}
+
+function aumentarQuarto() {
+    document.getElementById("caixote4").innerHTML = (num = num + 1) + " caixotes";
+}
+function diminuirQuarto() {
+    document.getElementById("caixote4").innerHTML = (num = num - 1) + " caixotes";
+}
+

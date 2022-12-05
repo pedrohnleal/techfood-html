@@ -8,6 +8,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 h3 {
     font-size: 48px;
     font-weight: bold;
@@ -96,7 +100,6 @@ h3 {
     margin-top: 10px;
     height: 30px;
     width: 330px;
-    border-radius: 20px;
     color: #000000;
     font-size: 17px;
     padding: 14px 16px;
@@ -145,10 +148,19 @@ h3 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    width: 75%;
+
 }
 
-.formulario-registro-empresa {
-    width: 50%;
+.formulario-registro-empresa {}
+
+.questao1,
+.questao2,
+.questao3,
+.questao4,
+.questao5 {
+    margin-top: 15px;
 }
 
 #nome-registro,
@@ -159,7 +171,6 @@ h3 {
     width: 64%;
     margin-top: 10px;
     height: 30px;
-    border-radius: 20px;
     color: #000000;
     font-size: 17px;
     padding: 14px 16px;
@@ -174,7 +185,6 @@ h3 {
     width: 25%;
     margin-top: 10px;
     height: 30px;
-    border-radius: 20px;
     color: #000000;
     font-size: 17px;
     padding: 14px 16px;
@@ -184,12 +194,23 @@ h3 {
 #input-question5 {
     width: 100%;
     height: 30px;
-    border-radius: 20px;
     color: #000000;
     font-size: 17px;
     padding: 14px 16px;
 }
 
+/*************** REGISTER USER ***************/
+.container-registro-usuario {
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario-registro-usuario {
+    width: 50%;
+}
 
 /*************** HOME ***************/
 .primeiro-bloco,
@@ -243,10 +264,20 @@ h3 {
     align-items: center;
 }
 
+#email-contato {
+    margin-top: 10px;
+    height: 30px;
+    width: 390px;
+
+    color: #000000;
+    font-size: 17px;
+    padding: 14px 16px;
+}
+
 #textarea {
     width: 400px;
     height: 250px;
-    border-radius: 20px;
+
     resize: none;
     padding: 10px;
     margin-bottom: 10px;
@@ -257,10 +288,9 @@ h3 {
     text-align: center;
 }
 
-.texto-contato {}
-
 .whatsapp {
     margin-top: 10px;
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -400,4 +430,22 @@ h3 {
 .dsmovie-pagination-box form {
     width: 100%;
     display: flex;
+}
+
+.carrinho-container {
+    width: 13.87em;
+    height: 21.12em;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background: #F5F5F5;
+
+    border-radius: 40px;
+}
+
+#carrinho {
+    position: fixed;
+    top: 75%;
 }
